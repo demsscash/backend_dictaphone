@@ -22,21 +22,21 @@ public interface AuthService {
      * @param patientDto The patient information to be registered.
      * @return The registered patient with created information.
      */
-    PatientDto registerPatient(PatientDto patientDto);
+    //PatientDto registerPatient(PatientDto patientDto);
 
     /**
      * Registers a doctor in the system.
      * @param medecinDto The doctor information to be registered.
      * @return The registered doctor with created information.
      */
-    MedecinDto registerMedecin(MedecinDto medecinDto);
+    //MedecinDto registerMedecin(MedecinDto medecinDto);
 
     /**
      * Registers an assistant in the system.
      * @param assistantDto The assistant information to be registered.
      * @return The registered assistant with created information.
      */
-    AssistantDto registerAssistant(AssistantDto assistantDto);
+    //AssistantDto registerAssistant(AssistantDto assistantDto);
 
     /**
      * Logs in a user and generates JWT tokens.
@@ -71,5 +71,5 @@ public interface AuthService {
      * @param email The email of the currently logged-in user.
      * @return The currently logged-in user's information.
      */
-    PatientDto getCurrentUser(String email);
+    //PatientDto getCurrentUser(String email);
 }
