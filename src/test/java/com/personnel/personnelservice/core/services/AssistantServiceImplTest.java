@@ -2,7 +2,6 @@ package com.personnel.personnelservice.core.services;
 
 import com.github.javafaker.Faker;
 import com.personnel.personnelservice.adapters.persistances.entities.Assistant;
-import com.personnel.personnelservice.core.models.dtos.AssistantDto;
 import com.personnel.personnelservice.adapters.persistances.mappers.AssistantMapper;
 import com.personnel.personnelservice.core.ports.repositories.AssistantRepository;
 import org.junit.jupiter.api.BeforeEach;

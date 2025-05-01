@@ -157,13 +157,5 @@ public class AuthController {
         return ResponseEntity.ok(Map.of("message", response));
     }
 
-    @GetMapping("/me")
-    @Operation(summary = "Get current user info", description = "Retrieve information of the authenticated user")
-    @SecurityRequirement(name = "bearerAuth")
-    @JsonView(Views.Response.class)
-    public ResponseEntity<?> getCurrentUser() {
-        String email = SecurityContextHolder.getContext().getAuthentication().getName();
-        PatientDto userDto = authService.getCurrentUser(email);
-        return ResponseEntity.ok(userDto);
-    }
+
 }
